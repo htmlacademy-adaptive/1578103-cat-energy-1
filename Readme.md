@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Максим  Седов](https://up.htmlacademy.ru/adaptive-individual/1/user/1578103).
-* Наставник: `Неизвестно`.
+* Наставник:  [Виктория  Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
