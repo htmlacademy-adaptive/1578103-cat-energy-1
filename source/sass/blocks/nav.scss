@@ -1,0 +1,17 @@
+.nav {
+  position: relative;
+  display: none;
+}
+
+.nav__toogle {
+  @include button-null;
+  width: 24px;
+  height: 24px;
+  background: #c31010;
+  position: absolute;
+  right: -2px;
+  top: -45px;
+}
+
+.nav__list {
+}

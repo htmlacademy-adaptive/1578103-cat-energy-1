@@ -1,0 +1,29 @@
+.site-list {
+  @include ul-null;
+}
+
+.site-list__item {
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100vh;
+    height: 1px;
+    background-color: red; //#e6e6e6;
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 23px 5px;
+}

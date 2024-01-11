@@ -1,0 +1,125 @@
+.product {
+  padding: 0 20px;
+}
+
+.product__list {
+  @include ul-null;
+}
+
+.product__item {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  padding: 30px 0 0 0;
+}
+
+.product__title {
+  margin: 0 0 30px;
+  padding-left: 92px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  position: relative;
+
+  &--slim {
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: rgb(104, 183, 56);
+      position: absolute;
+      top: -5px;
+      left: 22px;
+    }
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-image: url("../../img/Index/cat-slim.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: auto;
+      position: absolute;
+      top: -8px;
+      left: 29px;
+    }
+  }
+
+  &--pro {
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: rgb(104, 183, 56);
+      position: absolute;
+      top: -5px;
+      left: 23px;
+    }
+
+    &::after {
+      content: "";
+      width: 70px;
+      height: 50px;
+      background-image: url("../../img/Index/cat-pro.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: auto;
+      position: absolute;
+      top: 6px;
+      left: 15px;
+    }
+  }
+}
+
+.product__text {
+  margin: 0 22px 21px;
+}
+
+.product__link-wrap {
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: calc(100% - 40px);
+    height: 1px;
+    text-align: center;
+    background-color: #d9d9d9;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+}
+
+.product__link {
+  text-decoration: none;
+  display: inline-block;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 21px 0 21px 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 10px;
+    background-image: url("../../img/icons/arrow.svg");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: -56px;
+  }
+}
