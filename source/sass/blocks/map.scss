@@ -1,0 +1,19 @@
+.map {
+  position: relative;
+}
+.map__google {
+}
+.map__google-map {
+  width: 100%;
+}
+
+.map__image {
+}
+
+.map__map-image {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}

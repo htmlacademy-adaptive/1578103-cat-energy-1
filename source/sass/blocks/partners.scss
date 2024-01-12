@@ -1,0 +1,23 @@
+.partners {
+  padding: 27px 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.partners__invite {
+  width: 130px;
+  margin: 0;
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.partners__addres {
+  width: 139px;
+  font-style: normal;
+  line-height: 20px;
+}

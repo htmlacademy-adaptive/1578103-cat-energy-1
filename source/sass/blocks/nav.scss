@@ -1,6 +1,6 @@
 .nav {
-  position: relative;
-  display: none;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .nav__toogle {
@@ -9,9 +9,14 @@
   height: 24px;
   background: #c31010;
   position: absolute;
-  right: -2px;
+  right: 22px;
   top: -45px;
 }
 
-.nav__list {
+.nav--closed .nav__toogle {
+  background: #44e817;
+}
+
+.nav--closed .nav__list {
+  display: none;
 }

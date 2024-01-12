@@ -39,7 +39,7 @@
       content: "";
       width: 50px;
       height: 50px;
-      background-image: url("../../img/Index/cat-slim.svg");
+      background-image: url("../img/Index/cat-slim.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: auto;
@@ -65,7 +65,7 @@
       content: "";
       width: 70px;
       height: 50px;
-      background-image: url("../../img/Index/cat-pro.svg");
+      background-image: url("../img/Index/cat-pro.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: auto;
@@ -77,6 +77,7 @@
 }
 
 .product__text {
+  max-width: 430px;
   margin: 0 22px 21px;
 }
 
@@ -106,20 +107,48 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 21px 0 21px 23px;
+  padding: 21px 60px 21px 23px;
   position: relative;
 
   &::after {
     content: "";
     width: 40px;
     height: 10px;
-    background-image: url("../../img/icons/arrow.svg");
-    background-position: 0 50%;
+    background-image: url("../img/icons/long-arrow.svg");
+    background-position: -8px 50%;
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
     top: 50%;
     margin-top: -5px;
-    right: -56px;
+    right: 4px;
+    transition: background-position 400ms ease-out;
+  }
+
+  &:hover::after {
+    background-position: 0 50%;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    outline: none;
+    background-position: 0 50%;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus::after {
+      outline: none;
+      background-position: 0 50%;
+    }
+  }
+  &:active {
+    opacity: 0.3;
   }
 }

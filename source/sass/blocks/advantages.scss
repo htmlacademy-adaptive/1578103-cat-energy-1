@@ -1,0 +1,88 @@
+.advantages {
+}
+
+.advantages__title {
+  margin: 0 22px 42px;
+  max-width: 430px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.advantages__list {
+  @include ul-null;
+}
+
+.advantages__item {
+  margin-bottom: 26px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    position: absolute;
+    left: 22px;
+    top: -2px;
+  }
+
+  &--leaf::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icons/leaf.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    left: 22px;
+    top: -3px;
+  }
+
+  &--water::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icons/water.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    left: 22px;
+    top: -3px;
+  }
+
+  &--eat::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icons/eat.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    left: 22px;
+    top: -3px;
+  }
+
+  &--watch::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icons/watch.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    left: 22px;
+    top: -3px;
+  }
+}
+
+.advantages__text {
+  max-width: 420px;
+  margin: 0 20px 15px 102px;
+}
