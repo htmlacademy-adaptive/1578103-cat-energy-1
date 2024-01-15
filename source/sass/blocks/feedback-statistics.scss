@@ -1,11 +1,12 @@
 .feedback-statistics {
+  max-width: 550px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 31px;
 }
 
 .feedback-statistics__baner-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 31px;
-  margin-bottom: 29px;
 }
 .feedback-statistics__weight {
 }
@@ -13,4 +14,5 @@
 }
 .feedback-statistics__expenses {
   margin: 0 36px;
+  grid-column: 1/3;
 }

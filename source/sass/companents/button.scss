@@ -12,4 +12,21 @@
     color: #ffffff;
     background-color: #68b738;
   }
+
+  &--decor:hover {
+    background-color: #5eaa2f;
+  }
+
+  &--decor:focus-visible {
+    background-color: #5eaa2f;
+  }
+
+  @supports not selector(:focus-visible) {
+    &--decor:focus {
+      background-color: #5eaa2f;
+    }
+  }
+  &--decor:active {
+    color: hwb(0 100% 0% / 0.3);
+  }
 }

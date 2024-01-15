@@ -1,12 +1,12 @@
 .partners {
+  max-width: 450px;
   padding: 27px 22px 24px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .partners__invite {
-  width: 130px;
+  padding-right: 15px;
   margin: 0;
   color: #111111;
   font-family: "Oswald", sans-serif;
@@ -17,7 +17,6 @@
 }
 
 .partners__addres {
-  width: 139px;
   font-style: normal;
   line-height: 20px;
 }

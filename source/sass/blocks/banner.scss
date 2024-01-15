@@ -1,16 +1,16 @@
 .banner {
   width: 124px;
-  height: 56px;
+  min-height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
   box-sizing: border-box;
   padding: 13px 10px 0;
-  position: relative;
 }
 
 .banner__text {
-  margin: 0 0 9px;
+  margin: 0 0 8px;
+  padding: 0 5px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -22,10 +22,11 @@
 .banner__title {
   background-color: #eaeaea;
   width: 80px;
-  margin: 0 9px;
+  margin: -8px auto;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   text-transform: lowercase;
-  position: absolute;
+  position: relative;
+  top: 9px;
 }

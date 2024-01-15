@@ -1,0 +1,19 @@
+.inner-title {
+  max-width: 300px;
+  color: #000000;
+  margin: 0 20px;
+  font-family: $oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+
+  &::before {
+    content: "";
+    width: 100vh;
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+}

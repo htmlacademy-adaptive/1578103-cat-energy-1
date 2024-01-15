@@ -1,19 +1,32 @@
 .footer-links {
-  padding: 36px 20px;
+  padding: 36px 20px 18px;
   text-align: center;
+  background-color: #f2f2f2;
 }
 
-.footer-links__logo-shop-wrap {
-}
 .footer-links__logo-shop {
+  width: 100%;
+  color: #111111;
+  margin-bottom: 15px;
   display: block;
-}
 
-.footer-links__logo-image {
-}
+  &:hover {
+    color: #3e3e3e;
+  }
 
-.footer-links__social {
-}
+  &:focus-visible {
+    outline: none;
+    color: #3e3e3e;
+  }
 
-.footer-links__copyright {
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      color: #3e3e3e;
+    }
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
 }
