@@ -1,9 +1,12 @@
 .map {
   position: relative;
 }
+
 .map__google {
 }
+
 .map__google-map {
+  display: block;
   width: 100%;
 }
 

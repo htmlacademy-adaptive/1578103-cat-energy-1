@@ -20,7 +20,7 @@
         </picture>
       </a>
       <nav class="header__nav nav nav--closed">
-        <button class="nav__toogle">
+        <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
         <ul class="nav__list site-list">
@@ -40,40 +40,102 @@
       <h1 class="form-page__title inner-title">Подбор программы</h1>
       <p class="form-page-text inner-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/" name="cat-nutrition" method="post">
-        <fildset class="form__group name-group">
-          <legent class="visually-hidden">Данные кота</legent>
+        <fieldset class="form__group name-group">
+          <legend class="visually-hidden">Данные кота</legend>
           <ul class="form__list name-group__list">
             <li class="name-group__item text-input">
               <label class="text-input__label" for="name">Имя:*</label>
-              <input class="text-input__input" type="text" id="name" name="name" placeholder="барсик">
+              <input class="text-input__input" type="text" id="name" name="name" placeholder="барсик" required>
             </li>
             <li class="name-group__item text-input">
               <label class="text-input__label" for="weight">Вес (кг):*</label>
-              <input class="text-input__input" type="text" id="weight" name="weight" placeholder="7">
+              <input class="text-input__input" type="text" id="weight" name="weight" placeholder="7" required>
             </li>
             <li class="name-group__item text-input">
               <label class="text-input__label" for="age">Возраст (лет):</label>
               <input class="text-input__input" type="text" id="age" name="age" placeholder="7">
             </li>
           </ul>
-        </fildset>
-        <fildset class="form-group">
-          <legent class="visually-hidden"></legent>
-
-        </fildset>
-        <fildset class="form-group">
-          <legent class=""></legent>
-        </fildset>
-        <fildset class="form-group">
-          <legent class=""></legent>
-        </fildset>
-        <fildset class="form-group">
-          <legent class=""></legent>
-        </fildset>
-        <fildset class="form-group">
-          <legent class="visually-hidden"></legent>
-        </fildset>
-
+        </fieldset>
+        <fieldset class="form__group product-type">
+          <legend class="visually-hidden"></legend>
+          <ul class="form__list product-type__list">
+            <li class="product-type__item radio-input">
+              <input class="radio-input__input visually-hidden" type="radio" name="product-type" id="weight-loss"
+                value="weight-loss" checked>
+              <label for="weight-loss" class="radio-input__label">Похудение</label>
+            </li>
+            <li class="product-type__item radio-input">
+              <input class="radio-input__input visually-hidden" type="radio" name="product-type" id="weight-gain"
+                value="weight-gain">
+              <label for="weight-gain" class="radio-input__label">Набор массы</label>
+            </li>
+            <li class="product-type__item radio-input">
+              <input class="radio-input__input visually-hidden" type="radio" name="product-type" id="advice"
+                value="advice">
+              <label for="advice" class="radio-input__label">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group contact-group">
+          <legend class="form__legend contact-group__legent">Контактные данные (владельца кота)</legend>
+          <ul class="form__list contact-group__list">
+            <li class="contact-group__item text-input">
+              <label class="contact-group__label text-input__label" for="email">E-mail:*</label>
+              <input class="text-input__input" type="email" id="email" name="user-email"
+                placeholder="kuklachev@gmail.com" required>
+              <svg class="contact-group__svg text-input__svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="none">
+                <path d="M1.5 8.5v8h17v-8m-17-5h17v2l-8.5 6-8.5-6v-2Z" stroke="CurrentColor" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </li>
+            <li class="contact-group__item text-input">
+              <label class="contact-group__label text-input__label" for="telephone">Телефон:*</label>
+              <input class="text-input__input" type="tel" id="telephone" name="user-telephone"
+                placeholder="8 (960) 900-60-90" required>
+              <svg class="contact-group__svg text-input__svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="none">
+                <path
+                  d="M10 10h8.5m0 0L16 7.5m2.5 2.5L16 12.5m-7.5-10v5h-3v5h3v5H6c-1.5 0-2.5-1-2.5-2.5V5c0-1.5 1-2.5 2.5-2.5h2.5Z"
+                  stroke="CurrentColor" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group comment-group">
+          <legend class="form__legend comment-group__legend">Комментарий</legend>
+          <textarea class="comment-group__text" name="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__group additionally-group">
+          <legend class="form__legend additionally-group__legend">Дополнительно</legend>
+          <ul class="form__list additionally-group__list">
+            <li class="additionally-group__item checkbox-input">
+              <input class="checkbox-input__input visually-hidden" type="checkbox" id="sweetener" name="sweetener"
+                checked>
+              <label for="sweetener" class="checkbox-input__label">Сахарозаменитель</label>
+            </li>
+            <li class="additionally-group__item checkbox-input">
+              <input class="checkbox-input__input visually-hidden" type="checkbox" id="water" name="water">
+              <label for="water" class="checkbox-input__label">Питьевая вода</label>
+            </li>
+            <li class="additionally-group__item checkbox-input">
+              <input class="checkbox-input__input visually-hidden" type="checkbox" id="milk" name="milk">
+              <label for="milk" class="checkbox-input__label">Молоко</label>
+            </li>
+            <li class="additionally-group__item checkbox-input">
+              <input class="checkbox-input__input visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+              <label for="vitamins" class="checkbox-input__label">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group send-group">
+          <legend class="visually-hidden">
+          </legend>
+          <button class="send-group__button button button--decor" type="submit">Отправить заявку</button>
+        </fieldset>
+        <p class="form__required">* — Обязательные поля</p>
       </form>
     </main>
     <footer class="footer">
@@ -133,6 +195,7 @@
           </a>
         </div>
         <div class="footer-links__copyright copyright">
+          <span class="copyright__text copyright__text--mobile">HTML Academy</span>
           <a class="copyright__link" href="https://htmlacademy.ru">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__logo" role="img" aria-label="HTML Academy" xmlns="http://www.w3.org/2000/svg"

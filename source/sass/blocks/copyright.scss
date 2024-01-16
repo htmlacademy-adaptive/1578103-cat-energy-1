@@ -1,15 +1,14 @@
 .copyright {
   border-top: 1px solid #d9d9d9;
   padding: 17px 1px;
-}
-
-.copyright__link {
-  margin: 0 auto;
   max-width: 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
+}
+
+.copyright__link {
   text-decoration: none;
 
   &:hover .copyright__logo {
@@ -41,11 +40,14 @@
 }
 
 .copyright__text {
+  display: none;
   color: #444444;
-  display: inline-block;
   font-size: 16px;
   line-height: 20px;
   align-self: center;
+  &--mobile {
+    display: inline-block;
+  }
 }
 
 .copyright__logo {

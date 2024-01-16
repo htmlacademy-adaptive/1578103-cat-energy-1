@@ -6,6 +6,8 @@
 @import "./companents/inner-title.scss";
 @import "./companents/inner-text.scss";
 @import "./companents/text-input.scss";
+@import "./companents/radio-input.scss";
+@import "./companents/checkbox-input.scss";
 
 @import "./blocks/content.scss";
 @import "./blocks/header.scss";
@@ -30,3 +32,8 @@
 @import "./blocks/form/form-page.scss";
 @import "./blocks/form/form.scss";
 @import "./blocks/form/name-group.scss";
+@import "./blocks/form/product-type.scss";
+@import "./blocks/form/contact-group.scss";
+@import "./blocks/form/comment-group.scss";
+@import "./blocks/form/additionally-group.scss";
+@import "./blocks/form/send-group.scss";

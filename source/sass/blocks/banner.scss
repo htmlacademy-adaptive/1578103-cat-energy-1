@@ -1,16 +1,15 @@
 .banner {
+  text-align: center;
+}
+
+.banner__text {
   width: 124px;
   min-height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 13px 10px 0;
-}
-
-.banner__text {
   margin: 0 0 8px;
-  padding: 0 5px;
+  box-sizing: border-box;
+  padding: 13px 10px 10px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -18,15 +17,16 @@
   line-height: 24px;
   text-transform: uppercase;
 }
-
 .banner__title {
   background-color: #eaeaea;
-  width: 80px;
-  margin: -8px auto;
+  width: 86px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 5px;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   text-transform: lowercase;
   position: relative;
-  top: 9px;
+  top: -17px;
 }

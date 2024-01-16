@@ -3,7 +3,7 @@
   background-color: #ffffff;
 }
 
-.nav__toogle {
+.nav__toggle {
   @include button-null;
   width: 24px;
   height: 24px;
@@ -13,7 +13,7 @@
   top: 19px;
 }
 
-.nav--closed .nav__toogle {
+.nav--closed .nav__toggle {
   background: #44e817;
 }
 

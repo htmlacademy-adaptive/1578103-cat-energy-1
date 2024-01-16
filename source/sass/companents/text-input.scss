@@ -4,6 +4,7 @@
 }
 
 .text-input__label {
+  max-width: 95px;
   padding-top: 14px;
   color: #444444;
   font-family: $oswald;
@@ -11,12 +12,15 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  white-space: pre-line;
 }
 
 .text-input__input {
   @include input-null;
-  height: 41px;
-  padding: 1px 15px;
+  box-sizing: border-box;
+  width: 60%;
+  height: 45px;
+  padding: 1px 35px 0 15px;
   border: 1px solid #e7e7e7;
   color: #444444;
   font-family: $oswald;
@@ -28,5 +32,29 @@
 
   &::placeholder {
     color: #444444;
+  }
+  &--alarm {
+    border: 2px solid #ff8282;
+  }
+
+  &--alarm + .text-input__svg {
+    color: #ff8282;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:hover + .text-input__svg {
+    color: #222222;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+  }
+
+  &:focus + .text-input__svg {
+    color: #68b738;
   }
 }
