@@ -1,0 +1,51 @@
+.welcome {
+  min-height: 302px;
+  width: 100%;
+  background-image: url("../img/index/chicken-mobile.png");
+  background-position: left 50% bottom 44px;
+  background-repeat: no-repeat;
+  background-size: 280px 270px;
+}
+
+.welcome__wrap {
+  width: 100%;
+  min-height: 302px;
+  margin-bottom: 138px;
+  box-sizing: border-box;
+  padding-top: 17px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #63a63c;
+  background-image: url("../img/index/cat.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.welcome__title {
+  width: 280px;
+  padding: 10px 0;
+  margin: 0 auto 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.welcome__slogan {
+  width: 280px;
+  padding: 5px 0 160px;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.welcome__button {
+  display: block;
+  margin: 0 22px;
+  padding: 10px 10px;
+}

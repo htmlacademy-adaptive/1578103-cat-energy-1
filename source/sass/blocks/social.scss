@@ -1,0 +1,36 @@
+.social {
+  min-height: 59px;
+  border-top: 1px solid #d9d9d9;
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-top: 4px;
+}
+
+.social__link {
+  color: #666666;
+  height: 25px;
+  text-decoration: none;
+
+  &:hover {
+    color: #68b738;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: #68b738;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      color: #68b738;
+    }
+  }
+
+  &:active {
+    color: rgba(105, 183, 56, 0.3);
+  }
+}

@@ -1,0 +1,32 @@
+.footer-links {
+  padding: 39px 20px 18px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.footer-links__logo-shop {
+  width: 100%;
+  color: #111111;
+  margin-bottom: 15px;
+  display: block;
+
+  &:hover {
+    color: #3e3e3e;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: #3e3e3e;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      color: #3e3e3e;
+    }
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+}

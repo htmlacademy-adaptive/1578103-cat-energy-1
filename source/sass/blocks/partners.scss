@@ -1,0 +1,22 @@
+.partners {
+  max-width: 450px;
+  padding: 27px 22px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.partners__invite {
+  padding-right: 15px;
+  margin: 0;
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.partners__addres {
+  font-style: normal;
+  line-height: 20px;
+}

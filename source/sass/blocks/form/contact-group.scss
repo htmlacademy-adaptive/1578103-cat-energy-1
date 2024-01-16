@@ -1,0 +1,35 @@
+.contact-group {
+  padding-bottom: 23px;
+}
+
+.contact-group__legent {
+  max-width: 290px;
+  position: relative;
+  padding: 28px 0 0;
+  margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+}
+
+.contact-group__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.contact-group__svg {
+  color: #000000;
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
