@@ -1,6 +1,10 @@
 .copyright {
   border-top: 1px solid #d9d9d9;
   padding: 17px 1px;
+}
+
+.copyright__wrap {
+  margin: 0 auto;
   max-width: 500px;
   display: flex;
   flex-wrap: wrap;
@@ -18,6 +22,7 @@
   &:focus {
     outline: none;
   }
+
   &:focus-visible .copyright__logo {
     outline: none;
     color: #68b738;
@@ -45,6 +50,7 @@
   font-size: 16px;
   line-height: 20px;
   align-self: center;
+
   &--mobile {
     display: inline-block;
   }

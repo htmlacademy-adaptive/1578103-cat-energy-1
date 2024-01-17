@@ -13,7 +13,7 @@
 <body class="content">
   <div class="content__wrapper">
     <header class="header">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="header__logo logo">
         <picture>
           <img class="logo__image" src="./img/logo-mobile.svg" alt="Лгототип магазина cat energy" width="36"
             height="38">
@@ -78,7 +78,9 @@
           </ul>
         </fieldset>
         <fieldset class="form__group contact-group">
-          <legend class="form__legend contact-group__legent">Контактные данные (владельца кота)</legend>
+          <legend class="form__legend contact-group__legent">
+            <span class="form__legend-text contact-group__legent-text">Контактные данные (владельца кота)</span>
+          </legend>
           <ul class="form__list contact-group__list">
             <li class="contact-group__item text-input">
               <label class="contact-group__label text-input__label" for="email">E-mail:*</label>
@@ -104,12 +106,18 @@
           </ul>
         </fieldset>
         <fieldset class="form__group comment-group">
-          <legend class="form__legend comment-group__legend">Комментарий</legend>
-          <textarea class="comment-group__text" name="comment"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <legend class="form__legend comment-group__legend">
+            <span class="form__legend-text comment-group__legend-text">Комментарий</span>
+          </legend>
+          <span class="comment-group__text-wrap">
+            <textarea class="comment-group__text" name="comment"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </span>
         </fieldset>
         <fieldset class="form__group additionally-group">
-          <legend class="form__legend additionally-group__legend">Дополнительно</legend>
+          <legend class="form__legend additionally-group__legend">
+            <span class="form__legend-text additionally-group__legend__text">Дополнительно</span>
+          </legend>
           <ul class="form__list additionally-group__list">
             <li class="additionally-group__item checkbox-input">
               <input class="checkbox-input__input visually-hidden" type="checkbox" id="sweetener" name="sweetener"
@@ -195,23 +203,26 @@
           </a>
         </div>
         <div class="footer-links__copyright copyright">
-          <span class="copyright__text copyright__text--mobile">HTML Academy</span>
-          <a class="copyright__link" href="https://htmlacademy.ru">
-            <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__logo" role="img" aria-label="HTML Academy" xmlns="http://www.w3.org/2000/svg"
-              width="27" height="35" fill="none">
-              <g clip-path="url(#a)">
-                <path
-                  d="M13.64.52 13.5.5 0 1.9v24.61l13.5 7.99L27 26.51V1.91L13.64.5Zm11.6 25L13.5 32.46 1.77 25.52v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V17.4l3.62-2.15v10.26Zm0-11.57L22 15.83l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 14.08l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.8 1.77 12.72V3.49L13.5 2.26 25.23 3.5v9.24Z"
-                  fill="CurrentColor" />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" transform="translate(0 .5)" d="M0 0h27v34H0z" />
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
+          <div class="copyright__wrap">
+            <span class="copyright__text copyright__text--mobile">HTML
+              Academy</span>
+            <a class="copyright__link" href="https://htmlacademy.ru">
+              <span class="copyright__text">HTML Academy</span>
+              <svg class="copyright__logo" role="img" aria-label="HTML Academy" xmlns="http://www.w3.org/2000/svg"
+                width="27" height="35" fill="none">
+                <g clip-path="url(#a)">
+                  <path
+                    d="M13.64.52 13.5.5 0 1.9v24.61l13.5 7.99L27 26.51V1.91L13.64.5Zm11.6 25L13.5 32.46 1.77 25.52v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V17.4l3.62-2.15v10.26Zm0-11.57L22 15.83l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 14.08l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.8 1.77 12.72V3.49L13.5 2.26 25.23 3.5v9.24Z"
+                    fill="CurrentColor" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" transform="translate(0 .5)" d="M0 0h27v34H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
     </footer>
