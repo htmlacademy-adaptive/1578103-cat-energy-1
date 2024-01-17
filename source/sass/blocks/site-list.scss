@@ -10,6 +10,14 @@
   text-align: center;
   position: relative;
 
+  @media (min-width: $tablet) {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+  }
   &::before {
     content: "";
     width: 100%;
@@ -18,6 +26,12 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+    @media (min-width: $desktop) {
+    }
   }
 }
 
@@ -25,12 +39,23 @@
   display: inline-block;
   text-decoration: none;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   padding: 23px 5px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: normal;
+  }
 
   &--active::before {
     content: "";
