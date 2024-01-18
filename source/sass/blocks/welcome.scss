@@ -1,10 +1,71 @@
 .welcome {
-  min-height: 302px;
   width: 100%;
   background-image: url("../img/index/chicken-mobile.png");
   background-position: left 50% bottom 44px;
   background-repeat: no-repeat;
   background-size: 280px 270px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/chicken-mobile@2x.png");
+    background-size: 280px 270px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 34px;
+    padding-bottom: 526px;
+    background-image: url("../img/index/chicken-tablet.png");
+    background-position: left 50% bottom 0;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/chicken-tablet@2x.png");
+      background-size: 709px auto;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url("../img/index/chicken-desktop.png");
+    background-position: left calc(50% + 113px) bottom 52px;
+    background-size: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 81px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/chicken-desktop@2x.png");
+      background-size: 552px auto;
+    }
+  }
+
+  &::after {
+    @media (min-width: $desktop) {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #63a63c;
+      background-image: url("../img/index/cat-desktop.jpg");
+      background-position: right 0 top 0;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      display: block;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/cat-desktop@2x.jpg");
+        background-size: auto 100%;
+      }
+    }
+  }
+}
+
+.welcome__wrap-desktop {
+  @media (min-width: $desktop) {
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 694px;
+  }
 }
 
 .welcome__wrap {
@@ -22,30 +83,98 @@
   background-size: auto 100%;
   position: relative;
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/cat@2x.jpg");
+    background-size: auto 100%;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 100%;
+    margin-bottom: 0;
+    background-color: transparent;
+    background-image: none;
+    z-index: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: auto;
+    margin-bottom: 52px;
+    padding-top: 214px;
+    background-image: none;
+    background-color: transparent;
+    text-align: left;
+  }
 }
 
 .welcome__title {
   width: 280px;
   padding: 10px 0;
   margin: 0 auto 10px;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+
+  @media (min-width: $tablet) {
+    width: 480px;
+    margin: 0 0 25px 120px;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 480px;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 25px 189px;
+  }
 }
 
 .welcome__slogan {
   width: 280px;
   padding: 5px 0 160px;
   margin: 0 auto;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 480px;
+    margin: 0 0 50px 120px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 480px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 0 189px;
+  }
 }
 
 .welcome__button {
   display: block;
   margin: 0 22px;
   padding: 10px 10px;
+
+  @media (min-width: $tablet) {
+    width: 192px;
+    padding: 14px 26px;
+    margin: 0 0 0 120px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 192px;
+    padding: 14px 26px;
+    margin: 0 0 0 189px;
+  }
 }

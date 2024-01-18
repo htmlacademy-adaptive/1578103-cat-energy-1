@@ -1,6 +1,36 @@
 .feedback {
-  padding: 25px 22px 41px;
+  padding: 25px 20px 41px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    padding: 45px 30px 41px;
+    background-color: #ffffff;
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: $tablet) {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      content: "";
+      width: 100%;
+      height: calc(100% - 619px);
+      background-color: #eaeaea;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
 }
 
 .feedback__title {
@@ -11,11 +41,25 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet) {
+    max-width: 550px;
+    margin: 0 0 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .feedback__text {
   max-width: 430px;
   margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    max-width: 900px;
+    margin: 0 0 56px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .feedback__statistics {

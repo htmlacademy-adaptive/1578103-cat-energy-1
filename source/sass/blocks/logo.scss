@@ -2,6 +2,12 @@
   display: inline-block;
   padding-bottom: 10px;
 
+  @media (min-width: $tablet) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+  }
   &:hover {
     opacity: 0.8;
   }
@@ -33,7 +39,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 174px;
-    height: 50px;
+    width: 202px;
+    height: 59px;
   }
 }

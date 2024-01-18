@@ -8,6 +8,18 @@
   text-transform: uppercase;
   background-color: #f2f2f2;
 
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
   &--decor {
     color: #ffffff;
     background-color: #68b738;

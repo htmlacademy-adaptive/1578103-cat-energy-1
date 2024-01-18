@@ -1,15 +1,44 @@
 .product {
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
 }
 
 .product__list {
   @include ul-null;
+
+  @media (min-width: $desktop) {
+    margin: 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+  }
 }
 
 .product__item {
   background-color: #f2f2f2;
   margin-bottom: 20px;
   padding: 30px 0 0 0;
+
+  @media (min-width: $tablet) {
+    padding: 77px 0 42px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+
+  &:not(:last-child) {
+    @media (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .product__title {
@@ -23,6 +52,18 @@
   text-transform: uppercase;
   position: relative;
 
+  @media (min-width: $tablet) {
+    margin: 0 0 23px;
+    padding-left: 53px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 72px;
+    padding-left: 214px;
+  }
+
   &--slim {
     &::before {
       content: "";
@@ -33,6 +74,24 @@
       position: absolute;
       top: -5px;
       left: 22px;
+
+      @media (min-width: $tablet) {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        top: 15px;
+        left: 100%;
+        margin-left: -263px;
+      }
+
+      @media (min-width: $desktop) {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        top: -29px;
+        left: 52px;
+        margin-left: 0;
+      }
     }
 
     &::after {
@@ -42,10 +101,28 @@
       background-image: url("../img/Index/cat-slim.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
-      background-size: auto;
+      background-size: auto 50px;
       position: absolute;
       top: -8px;
-      left: 29px;
+      left: 27px;
+
+      @media (min-width: $tablet) {
+        width: 200px;
+        height: 200px;
+        background-size: 140px auto;
+        top: 4px;
+        left: 100%;
+        margin-left: -233px;
+      }
+
+      @media (min-width: $desktop) {
+        width: 100px;
+        height: 100px;
+        background-size: 70px auto;
+        top: -35px;
+        left: 67px;
+        margin-left: 0;
+      }
     }
   }
 
@@ -59,6 +136,24 @@
       position: absolute;
       top: -5px;
       left: 23px;
+
+      @media (min-width: $tablet) {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        top: 15px;
+        left: 100%;
+        margin-left: -263px;
+      }
+
+      @media (min-width: $desktop) {
+        width: 100px;
+        height: 100px;
+        border-radius: 500px;
+        top: -29px;
+        left: 52px;
+        margin-left: 0;
+      }
     }
 
     &::after {
@@ -68,10 +163,28 @@
       background-image: url("../img/Index/cat-pro.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
-      background-size: auto;
+      background-size: 67px auto;
       position: absolute;
       top: 6px;
-      left: 15px;
+      left: 12px;
+
+      @media (min-width: $tablet) {
+        width: 270px;
+        height: 200px;
+        background-size: 268px auto;
+        top: 58px;
+        left: 100%;
+        margin-left: -297px;
+      }
+
+      @media (min-width: $desktop) {
+        width: 150px;
+        height: 100px;
+        background-size: 134px auto;
+        top: -9px;
+        left: 34px;
+        margin-left: 0;
+      }
     }
   }
 }
@@ -79,6 +192,19 @@
 .product__text {
   max-width: 430px;
   margin: 0 22px 21px;
+
+  @media (min-width: $tablet) {
+    max-width: 344px;
+    margin: 0 52px 40px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 460px;
+    margin: 0 52px 15px;
+  }
 }
 
 .product__link-wrap {
@@ -95,6 +221,10 @@
     position: absolute;
     top: 0;
     left: 20px;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 
@@ -102,13 +232,22 @@
   text-decoration: none;
   display: inline-block;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
   padding: 21px 60px 21px 23px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin-left: 29px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 30px;
+  }
 
   &::after {
     content: "";
@@ -121,8 +260,13 @@
     position: absolute;
     top: 50%;
     margin-top: -5px;
-    right: 4px;
+    right: 7px;
     transition: background-position 400ms ease-out;
+
+    @media (min-width: $tablet) {
+      margin-top: -6px;
+      right: -6px;
+    }
   }
 
   &:hover::after {

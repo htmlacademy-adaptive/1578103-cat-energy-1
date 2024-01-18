@@ -49,6 +49,7 @@
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
+    padding: 14px 6px;
   }
 
   @media (min-width: $desktop) {
@@ -59,31 +60,51 @@
 
   &--active::before {
     content: "";
-    width: 100%;
+    width: calc(100% - 12px);
     height: 2px;
     background-color: #68b738;
     position: absolute;
-    left: 0;
-    bottom: 10px;
+    left: 6px;
+    bottom: 4px;
+
+    @media (min-width: $desktop) {
+      background-color: #ffffff;
+    }
   }
 
   &:hover {
     color: rgba(0, 0, 0, 0.8);
+
+    @media (min-width: $desktop) {
+      color: rgba(255, 255, 255, 0.8);
+    }
   }
 
   &:focus-visible {
     outline: none;
     color: rgba(0, 0, 0, 0.8);
+
+    @media (min-width: $desktop) {
+      color: rgba(255, 255, 255, 0.8);
+    }
   }
 
   @supports not selector(:focus-visible) {
     &:focus {
       outline: none;
       color: rgba(0, 0, 0, 0.8);
+
+      @media (min-width: $desktop) {
+        color: rgba(255, 255, 255, 0.8);
+      }
     }
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.6);
+
+    @media (min-width: $desktop) {
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 }

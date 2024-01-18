@@ -6,6 +6,7 @@
   }
 
   @media (min-width: $desktop) {
+    width: 720px;
   }
 }
 
@@ -90,13 +91,17 @@
   display: none;
 
   @media (min-width: $tablet) {
+    margin-right: 30px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    gap: 22px;
     position: static;
   }
 
   @media (min-width: $desktop) {
+    margin-right: 105px;
+    padding-top: 1px;
   }
 }
 
@@ -107,6 +112,7 @@
   position: absolute;
   top: 65px;
   left: 0;
+  z-index: 5;
 
   @media (min-width: $tablet) {
     display: flex;

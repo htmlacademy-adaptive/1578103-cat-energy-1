@@ -4,8 +4,20 @@
 
 .main__welcome {
   margin-bottom: 19px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .main__product {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 75px;
+  }
 }
