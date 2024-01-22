@@ -1,0 +1,14 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__partners-wrap {
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 106px;
+    position: relative;
+    z-index: 5;
+  }
+}

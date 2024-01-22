@@ -1,6 +1,11 @@
 .copyright {
   border-top: 1px solid #d9d9d9;
-  padding: 17px 1px;
+  padding: 16px 1px;
+
+  @media (min-width: $tablet) {
+    border: none;
+    padding: 0;
+  }
 }
 
 .copyright__wrap {
@@ -10,10 +15,20 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }
 
 .copyright__link {
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &:hover .copyright__logo {
     color: #68b738;
@@ -49,14 +64,30 @@
   color: #444444;
   font-size: 16px;
   line-height: 20px;
-  align-self: center;
+
+  @media (min-width: $tablet) {
+    display: block;
+    text-align: left;
+    align-self: center;
+    flex-grow: 1;
+    padding-left: 7px;
+  }
 
   &--mobile {
     display: inline-block;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 
 .copyright__logo {
   color: #666666;
   padding-top: 3px;
+
+  @media (min-width: $tablet) {
+    width: 27px;
+    padding-top: 1px;
+  }
 }

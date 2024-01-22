@@ -1,5 +1,167 @@
 .slider {
-  width: 100%;
+  width: 280px;
   height: 256px;
-  background-color: #d93b3b;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    bottom: 31px;
+    right: 0;
+  }
+}
+
+.slider__list {
+  @include ul-null;
+}
+
+.slider__screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: width 2s ease;
+  z-index: 1;
+
+  &--before {
+    width: 50%;
+    z-index: 2;
+    background-color: #eaeaea;
+
+    &::before {
+      @media (min-width: $tablet) {
+        content: "";
+        width: 100%;
+        height: 152px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      @media (min-width: $desktop) {
+        height: 135px;
+      }
+    }
+  }
+
+  &--after {
+    background-color: #eaeaea;
+
+    &::before {
+      @media (min-width: $tablet) {
+        content: "";
+        width: 100%;
+        height: 152px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      @media (min-width: $desktop) {
+        height: 135px;
+      }
+    }
+  }
+}
+
+.slider--before .slider__screen--before {
+  width: 100%;
+}
+
+.slider--after .slider__screen--before {
+  width: 0;
+}
+
+.slider__image {
+  display: block;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__control {
+  @include button-null;
+  color: #666666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: left 2s ease;
+  z-index: 5;
+
+  &:hover {
+    color: #68b738;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: #68b738;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      color: #68b738;
+    }
+  }
+
+  &:active {
+    color: rgba(94, 170, 47, 0.3);
+  }
+
+  &::before {
+    content: "";
+    width: 4px;
+    height: 256px;
+    border-radius: 2px;
+    background-color: #666666;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    @media (min-width: $tablet) {
+      height: 512px;
+    }
+  }
+  &:hover::before {
+    background-color: #68b738;
+  }
+
+  &:focus-visible::before {
+    outline: none;
+    color: #68b738;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus::before {
+      outline: none;
+      background-color: #68b738;
+    }
+  }
+
+  &:active::before {
+    background-color: rgba(94, 170, 47, 0.3);
+  }
+}
+
+.slider--before .slider__control {
+  left: 100%;
+}
+
+.slider--after .slider__control {
+  left: 0;
 }

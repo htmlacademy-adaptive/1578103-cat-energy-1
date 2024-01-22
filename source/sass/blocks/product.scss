@@ -4,13 +4,17 @@
   @media (min-width: $tablet) {
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+  }
 }
 
 .product__list {
   @include ul-null;
 
   @media (min-width: $desktop) {
-    margin: 0 80px;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 78px;

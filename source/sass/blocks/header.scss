@@ -15,11 +15,12 @@
   }
 
   @media (min-width: $desktop) {
-    width: 100%;
+    width: 1220px;
     padding: 55px 0 0;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    margin-left: -610px;
   }
 }
 
@@ -31,6 +32,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 110px;
+    margin-left: 0;
   }
 }

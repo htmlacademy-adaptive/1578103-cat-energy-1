@@ -7,7 +7,13 @@
 
   @media (min-width: $tablet) {
     max-width: 100%;
+    margin-bottom: 81px;
     grid-template-columns: 173px 173px 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 173px 173px;
+    margin-bottom: 0;
   }
 }
 
@@ -17,5 +23,9 @@
 
   @media (min-width: $tablet) {
     grid-column: auto;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1/3;
   }
 }
