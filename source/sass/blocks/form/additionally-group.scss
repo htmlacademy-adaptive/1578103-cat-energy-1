@@ -1,10 +1,18 @@
 .additionally-group {
-  padding-bottom: 39px;
+  padding-bottom: 37px;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 44px;
+  }
 }
 
 .additionally-group__legend {
   margin-bottom: 39px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 65px;
+  }
 
   &::before {
     content: "";
@@ -15,17 +23,56 @@
     top: 15px;
     right: 0;
     z-index: -1;
+
+    @media (min-width: $tablet) {
+      top: 22px;
+    }
   }
 }
 
-.additionally-group__legend__text {
+.additionally-group__legend-text-wrap {
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.additionally-group__legend-text {
   max-width: 250px;
-  padding-left: 22px;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 21px;
+
+  @media (min-width: $tablet) {
+    max-width: 630px;
+    margin-left: 30px;
+    padding-left: 40px;
+    padding-right: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    position: relative;
+    left: -40px;
+  }
 }
 
 .additionally-group__list {
-  margin: 0 22px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 27px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 27px 80px;
+  }
 }
 
 .additionally-group__item:not(:last-child) {

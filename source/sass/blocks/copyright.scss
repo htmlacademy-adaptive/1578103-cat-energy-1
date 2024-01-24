@@ -1,6 +1,6 @@
 .copyright {
   border-top: 1px solid #d9d9d9;
-  padding: 16px 1px;
+  padding: 18px 1px;
 
   @media (min-width: $tablet) {
     border: none;
@@ -75,6 +75,7 @@
 
   &--mobile {
     display: inline-block;
+    align-self: center;
 
     @media (min-width: $tablet) {
       display: none;

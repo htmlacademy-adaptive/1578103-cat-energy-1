@@ -9,13 +9,41 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+.form-page__wrap {
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto 66px;
   }
 }
 
 .form-page__title {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 55px;
+    margin-left: 69px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+  }
 }
 
 .form-page-text {
-  margin: 0 32px 39px 22px;
+  margin: 0 32px 39px 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 32px 66px 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 32px 39px 0;
+  }
 }

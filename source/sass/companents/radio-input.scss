@@ -9,15 +9,26 @@
   position: relative;
   cursor: pointer;
 
+  @media (min-width: $tablet) {
+    padding-left: 62px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::before {
     content: "";
     width: 28px;
     height: 28px;
-    border-radius: 14px;
+    border-radius: 50%;
     border: 1px solid #cdcdcd;
     position: absolute;
     left: 2px;
     top: -4px;
+
+    @media (min-width: $tablet) {
+      width: 38px;
+      height: 38px;
+    }
   }
 
   &::after {
@@ -25,11 +36,18 @@
     display: none;
     width: 14px;
     height: 14px;
-    border-radius: 7px;
+    border-radius: 50%;
     background-color: #68b738;
     position: absolute;
     left: 10px;
     top: 4px;
+
+    @media (min-width: $tablet) {
+      width: 18px;
+      height: 18px;
+      left: 13px;
+      top: 6px;
+    }
   }
 }
 

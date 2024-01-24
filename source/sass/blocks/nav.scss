@@ -2,11 +2,21 @@
   width: 100%;
 
   @media (min-width: $tablet) {
-    width: 477px;
+    width: 475px;
   }
 
   @media (min-width: $desktop) {
     width: 483px;
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      width: 471px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 483px;
+    }
   }
 }
 
@@ -94,7 +104,7 @@
     margin-right: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 27px;
+    gap: 30px;
     position: static;
   }
 

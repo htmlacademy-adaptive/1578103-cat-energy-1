@@ -1,0 +1,46 @@
+.specifications {
+  margin: 0;
+  color: #444444;
+  font-family: $lato;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    margin: 0 37px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.specifications__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #cdcdcd;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.specifications__name {
+  overflow: hidden;
+}
+
+.specifications__value {
+  margin: 0;
+  text-align: right;
+  overflow: hidden;
+}

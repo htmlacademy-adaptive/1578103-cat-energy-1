@@ -51,7 +51,7 @@
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
-    padding: 14px 0 14px 6px;
+    padding: 14px 0 14px 4px;
   }
 
   @media (min-width: $desktop) {
@@ -112,5 +112,21 @@
     @media (min-width: $desktop) {
       color: rgba(255, 255, 255, 0.6);
     }
+  }
+}
+
+.nav--form .site-list__link {
+  @media (min-width: $desktop) {
+    color: #111111;
+  }
+}
+
+.nav--form .site-list__link--active::before {
+  @media (min-width: $tablet) {
+    bottom: 6px;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: #68b738;
   }
 }
