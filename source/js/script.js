@@ -12,13 +12,13 @@ navToggle.addEventListener('click', () => {
 
 if (sliderControl) {
   let flag = false;
-sliderControl.addEventListener('click', (evt) => {
-  if (flag) {
-    slider.classList.toggle('slider--before');
-    slider.classList.toggle('slider--after');
-  } else {
-    slider.classList.add('slider--after');
-    flag = true;
-   }
-});
+  sliderControl.addEventListener('click', (evt) => {
+    if (flag) {
+      slider.classList.toggle('slider--before');
+      slider.classList.toggle('slider--after');
+    } else {
+      slider.classList.add('slider--after');
+      flag = true;
+    }
+  });
 }
