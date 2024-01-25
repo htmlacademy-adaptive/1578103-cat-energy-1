@@ -8,52 +8,22 @@
 
 .additionally-group__legend {
   margin-bottom: 39px;
-  position: relative;
 
   @media (min-width: $tablet) {
     margin-bottom: 65px;
-  }
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #68b738;
-    position: absolute;
-    top: 15px;
-    right: 0;
-    z-index: -1;
-
-    @media (min-width: $tablet) {
-      top: 22px;
-    }
-  }
-}
-
-.additionally-group__legend-text-wrap {
-  @media (min-width: $desktop) {
-    width: 1220px;
-    margin: 0 auto;
-    display: block;
   }
 }
 
 .additionally-group__legend-text {
   max-width: 250px;
-  padding-left: 20px;
-  padding-right: 21px;
 
   @media (min-width: $tablet) {
     max-width: 630px;
     margin-left: 30px;
-    padding-left: 40px;
-    padding-right: 42px;
   }
 
   @media (min-width: $desktop) {
     margin-left: 0;
-    position: relative;
-    left: -40px;
   }
 }
 

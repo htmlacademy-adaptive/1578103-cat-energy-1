@@ -13,8 +13,8 @@
 </head>
 
 <body class="content">
-  <div class="content__wrapper">
-    <header class="header">
+  <div class="content__wrapper content__wrapper--index">
+    <header class="header header--index">
       <a href="index.html" class="header__logo logo">
         <picture>
           <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
@@ -23,13 +23,13 @@
             height="38">
         </picture>
       </a>
-      <nav class="header__nav nav">
+      <nav class="header__nav  nav">
         <button class="nav__toggle" type="button">
           <span class="nav__toggle-wrap">
             <span class="visually-hidden">Открыть меню навигации</span>
           </span>
         </button>
-        <ul class="nav__list site-list">
+        <ul class="nav__list site-list site-list--index">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">Главная</a>
           </li>
@@ -105,8 +105,10 @@
         </ul>
       </section>
       <section class="main__feedback feedback">
+        <h2 class="feedback__title">
+          <span class="feedback__title-wrap">Живой пример</span>
+        </h2>
         <div class="feedback__wrap">
-          <h2 class="feedback__title">Живой пример</h2>
           <p class="feedback__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
             обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял
@@ -139,7 +141,7 @@
               <li class="slider__screen slider__screen--after">
                 <picture>
                   <source media="(min-width: 768px)"
-                    srcset="./img/index/cat-after-tablet.png 1x, ./img/index/cat-after-tablet@2x.png 2x, ">
+                    srcset="./img/index/cat-after-tablet.png 1x, ./img/index/cat-after-tablet@2x.png 2x">
                   <img class="slider__image" src="./img/index/cat-after.png" srcset="./img/index/cat-after@2x.png 2x"
                     alt="Ваш кот после" width="280" height="256">
                 </picture>

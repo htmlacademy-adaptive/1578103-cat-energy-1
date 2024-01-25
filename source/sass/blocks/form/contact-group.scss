@@ -1,64 +1,33 @@
 .contact-group {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet) {
-    padding-bottom: 66px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 51px;
+    padding-bottom: 25px;
   }
 }
 
-.contact-group__legent {
-  padding-top: 26px;
+.contact-group__legend {
   margin-bottom: 32px;
-  position: relative;
 
   @media (min-width: $tablet) {
     margin-bottom: 74px;
   }
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #68b738;
-    position: absolute;
-    top: 43px;
-    right: 0;
-    z-index: -1;
-
-    @media (min-width: $tablet) {
-      top: 48px;
-    }
-  }
 }
 
-.contact-group__legent-text-wrap {
-  @media (min-width: $desktop) {
-    width: 1220px;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-.contact-group__legent-text {
+.contact-group__legend-text {
   max-width: 229px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: $tablet) {
     max-width: 630px;
     margin-left: 30px;
-    padding-left: 40px;
-    padding-right: 37px;
   }
 
   @media (min-width: $desktop) {
     margin-left: 0;
-    position: relative;
-    left: -40px;
   }
 }
 

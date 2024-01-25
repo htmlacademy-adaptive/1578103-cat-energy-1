@@ -1,5 +1,5 @@
 .footer-links {
-  padding: 41px 20px 18px;
+  padding: 43px 20px 18px;
   text-align: center;
   background-color: #f2f2f2;
 
@@ -37,9 +37,13 @@
   @media (min-width: $tablet) {
     width: 170px;
     margin-bottom: 0;
-    padding-top: 4px;
+    padding-top: 7px;
     text-align: left;
-    align-self: center;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 5px;
   }
 
   &:hover {

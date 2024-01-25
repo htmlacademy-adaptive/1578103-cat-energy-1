@@ -1,5 +1,5 @@
 .partners {
-  max-width: 450px;
+  max-width: 100%;
   padding: 25px 20px 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,6 +17,7 @@
 }
 
 .partners__invite {
+  width: 110px;
   padding-right: 15px;
   margin: 0;
   color: #111111;
@@ -38,14 +39,15 @@
 }
 
 .partners__addres {
+  width: 140px;
   font-style: normal;
   line-height: 20px;
+  justify-self: end;
 
   @media (min-width: $tablet) {
     width: 180px;
     font-size: 16px;
     text-align: right;
-    justify-self: end;
   }
 
   @media (min-width: $desktop) {
