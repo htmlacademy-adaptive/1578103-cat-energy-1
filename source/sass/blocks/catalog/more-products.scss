@@ -1,0 +1,145 @@
+.more-products {
+  padding: 0 20px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 126px 0 0;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+.more-products__wrap {
+  @media (min-width: $tablet) {
+    padding-bottom: 38px;
+    border: 2px solid #f2f2f2;
+  }
+}
+
+.more-products__link {
+  margin-bottom: 20px;
+  padding-top: 78px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding-top: 158px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 146px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    position: absolute;
+    top: 40px;
+
+    @media (min-width: $tablet) {
+      width: 60px;
+      top: 78px;
+    }
+  }
+
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+
+    @media (min-width: $tablet) {
+      transform: translateX(-29px) rotate(90deg);
+    }
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.more-products__title {
+  display: block;
+  color: #111111;
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    width: 170px;
+    margin: 0 auto 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 26px;
+  }
+}
+
+.more-products__text {
+  display: block;
+  color: #444444;
+  font-family: $lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    margin: 0 auto 82px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 90px;
+  }
+}
+
+.more-products__button {
+  display: block;
+  padding: 10px 10px;
+
+  @media (min-width: $tablet) {
+    margin: 0 35px;
+  }
+}

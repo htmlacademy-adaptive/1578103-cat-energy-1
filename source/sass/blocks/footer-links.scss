@@ -1,7 +1,31 @@
 .footer-links {
-  padding: 39px 20px 18px;
+  padding: 41px 20px 18px;
   text-align: center;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+}
+
+.footer-links-wrap {
+  @media (min-width: $tablet) {
+    padding: 55px 29px 55px 31px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 67px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-links__logo-shop {
@@ -9,6 +33,14 @@
   color: #111111;
   margin-bottom: 15px;
   display: block;
+
+  @media (min-width: $tablet) {
+    width: 170px;
+    margin-bottom: 0;
+    padding-top: 4px;
+    text-align: left;
+    align-self: center;
+  }
 
   &:hover {
     color: #3e3e3e;

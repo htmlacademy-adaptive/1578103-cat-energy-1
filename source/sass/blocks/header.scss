@@ -1,11 +1,45 @@
 .header {
-  padding: 13px 20px 0;
+  padding: 13px 0 0;
   background-image: url("../img/logo-text.svg");
   background-position: top 23px left 50%;
   background-repeat: no-repeat;
   background-size: auto;
   position: relative;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: none;
+    padding: 25px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    padding: 55px 0 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -610px;
+    z-index: 5;
+  }
+
+  &--form {
+    @media (min-width: $desktop) {
+      margin: 0 auto;
+      position: static;
+    }
+  }
 }
 
-.header__nav {
+.header__logo {
+  margin-left: 20px;
+
+  @media (min-width: $tablet) {
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+  }
 }

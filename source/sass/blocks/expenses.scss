@@ -4,14 +4,38 @@
   box-sizing: border-box;
   padding: 3px 10px;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    justify-self: end;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    width: 346px;
+    max-width: none;
+    padding-top: 38px;
+    text-align: left;
+    justify-self: start;
+  }
 }
 
 .expenses__title {
   display: inline-block;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 62px;
+  }
 }
 
 .expenses__price {

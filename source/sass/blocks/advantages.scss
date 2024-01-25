@@ -1,37 +1,63 @@
 .advantages {
   padding-bottom: 47px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title {
   margin: 0 22px 42px;
   max-width: 430px;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet) {
+    margin: 0 30px 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 20px 30px 0;
+  }
 }
 
 .advantages__list {
   @include ul-null;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 78px;
+  }
 }
 
 .advantages__item {
   min-height: 60px;
   position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @media (min-width: $tablet) {
+    min-height: 318px;
   }
 
-  &::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: #68b738;
-    position: absolute;
-    left: 22px;
-    top: -2px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+    }
   }
 
   &--leaf::after {
@@ -43,8 +69,37 @@
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
-    left: 22px;
+    left: 20px;
     top: -3px;
+
+    @media (min-width: $tablet) {
+      left: 39px;
+      top: 53px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 10px;
+      top: 51px;
+    }
+  }
+
+  &--leaf::before {
+    @media (min-width: $tablet) {
+      content: "1";
+      color: #f2f2f2;
+      font-family: $oswald;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      position: absolute;
+      top: 1px;
+      right: 130px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop) {
+      right: 22px;
+    }
   }
 
   &--water::after {
@@ -56,8 +111,36 @@
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
-    left: 22px;
+    left: 20px;
     top: -3px;
+
+    @media (min-width: $tablet) {
+      left: 39px;
+      top: 53px;
+    }
+    @media (min-width: $desktop) {
+      left: 10px;
+      top: 51px;
+    }
+  }
+
+  &--water::before {
+    @media (min-width: $tablet) {
+      content: "2";
+      color: #f2f2f2;
+      font-family: $oswald;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      position: absolute;
+      top: 1px;
+      right: 110px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop) {
+      right: 0;
+    }
   }
 
   &--eat::after {
@@ -69,8 +152,37 @@
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
-    left: 22px;
+    left: 20px;
     top: -3px;
+
+    @media (min-width: $tablet) {
+      left: 41px;
+      top: 50px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 10px;
+      top: 51px;
+    }
+  }
+
+  &--eat::before {
+    @media (min-width: $tablet) {
+      content: "3";
+      color: #f2f2f2;
+      font-family: $oswald;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      position: absolute;
+      top: 1px;
+      right: 107px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop) {
+      right: 0;
+    }
   }
 
   &--watch::after {
@@ -82,12 +194,75 @@
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
-    left: 22px;
+    left: 20px;
     top: -3px;
+
+    @media (min-width: $tablet) {
+      left: 39px;
+      top: 50px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 10px;
+      top: 51px;
+    }
+  }
+
+  &--watch::before {
+    @media (min-width: $tablet) {
+      content: "4";
+      color: #f2f2f2;
+      font-family: $oswald;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      position: absolute;
+      top: 1px;
+      right: 105px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop) {
+      right: -3px;
+    }
   }
 }
 
 .advantages__text {
   max-width: 420px;
   margin: 0 20px 0 102px;
+
+  @media (min-width: $tablet) {
+    max-width: 260px;
+    margin: 0 30px;
+    padding-top: 153px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    position: absolute;
+    left: 20px;
+    top: -2px;
+
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 80px;
+      left: 30px;
+      top: 42px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 0;
+      top: 40px;
+    }
+  }
 }

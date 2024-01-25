@@ -8,6 +8,7 @@
 @import "./companents/text-input.scss";
 @import "./companents/radio-input.scss";
 @import "./companents/checkbox-input.scss";
+@import "./companents/additional.scss";
 
 @import "./blocks/content.scss";
 @import "./blocks/header.scss";
@@ -37,3 +38,8 @@
 @import "./blocks/form/comment-group.scss";
 @import "./blocks/form/additionally-group.scss";
 @import "./blocks/form/send-group.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/product-card.scss";
+@import "./blocks/catalog/specifications.scss";
+@import "./blocks/catalog/more-products.scss";
+@import "./blocks/catalog/additional-products.scss";

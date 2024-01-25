@@ -1,35 +1,107 @@
 .contact-group {
-  padding-bottom: 23px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 51px;
+  }
 }
 
 .contact-group__legent {
-  max-width: 290px;
+  padding-top: 26px;
+  margin-bottom: 32px;
   position: relative;
-  padding: 28px 0 0;
-  margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 74px;
+  }
 
   &::before {
     content: "";
-    width: 100vw;
-    height: 1px;
-    background-color: #d9d9d9;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
     position: absolute;
-    top: 0;
-    left: -20px;
+    top: 43px;
+    right: 0;
+    z-index: -1;
+
+    @media (min-width: $tablet) {
+      top: 48px;
+    }
+  }
+}
+
+.contact-group__legent-text-wrap {
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.contact-group__legent-text {
+  max-width: 229px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    max-width: 630px;
+    margin-left: 30px;
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    position: relative;
+    left: -40px;
+  }
+}
+
+.contact-group__list {
+  margin: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 81px;
   }
 }
 
 .contact-group__item {
   position: relative;
 
+  @media (min-width: $desktop) {
+    width: 569px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 14px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
   }
 }
 
 .contact-group__svg {
   color: #000000;
   position: absolute;
-  top: 12px;
-  right: 14px;
+  top: 13px;
+  right: 12px;
+
+  @media (min-width: $tablet) {
+    top: 16px;
+    right: 14px;
+  }
 }

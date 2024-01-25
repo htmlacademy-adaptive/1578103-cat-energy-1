@@ -1,8 +1,32 @@
 .name-group {
   display: block;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 72px;
+
+    @media (min-width: $desktop) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.name-group__list {
+  margin: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .name-group__item:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }

@@ -1,5 +1,21 @@
 .contacts {
+  position: relative;
 }
 
-.contacts__map {
+.contacts__partners-wrap {
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 106px;
+    position: relative;
+    z-index: 5;
+  }
+  &--form {
+    background-color: #f2f2f2;
+
+    @media (min-width: $desktop) {
+      background-color: transparent;
+    }
+  }
 }

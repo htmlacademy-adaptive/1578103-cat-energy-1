@@ -1,5 +1,6 @@
 .button {
   text-decoration: none;
+  color: #444444;
   text-align: center;
   font-family: $oswald;
   font-size: 16px;
@@ -7,6 +8,31 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: #ebebeb;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      background-color: #ebebeb;
+    }
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 
   &--decor {
     color: #ffffff;
@@ -18,15 +44,23 @@
   }
 
   &--decor:focus-visible {
+    outline: none;
     background-color: #5eaa2f;
   }
 
   @supports not selector(:focus-visible) {
     &--decor:focus {
+      outline: none;
       background-color: #5eaa2f;
     }
   }
+
   &--decor:active {
-    color: hwb(0 100% 0% / 0.3);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--small-text {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

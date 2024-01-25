@@ -1,22 +1,139 @@
 .nav {
   width: 100%;
-  background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    width: 475px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 483px;
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      width: 471px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 483px;
+    }
+  }
 }
 
 .nav__toggle {
   @include button-null;
   width: 24px;
   height: 24px;
-  background: #c31010;
   position: absolute;
-  right: 19px;
+  right: 22px;
   top: 19px;
+  display: none;
+  cursor: pointer;
+}
+
+.nav__toggle-wrap {
+  width: 24px;
+  height: 2px;
+  display: block;
+  background-color: #000000;
+  transition: background-color 1s ease-in;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    transition: transform 0.6s ease-in;
+  }
+
+  &::before {
+    top: 3px;
+    transform-origin: top right;
+  }
+
+  &::after {
+    bottom: 3px;
+    transform-origin: bottom right;
+  }
 }
 
 .nav--closed .nav__toggle {
-  background: #44e817;
+  display: block;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.nav--opened .nav__toggle {
+  display: block;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.nav--opened .nav__toggle-wrap {
+  background-color: transparent;
+  transition: background-color 0.3s ease-out;
+}
+
+.nav--opened .nav__toggle-wrap::after {
+  transform: rotate(45deg);
+}
+
+.nav--opened .nav__toggle-wrap::before {
+  transform: rotate(-45deg);
 }
 
 .nav--closed .nav__list {
   display: none;
+
+  @media (min-width: $tablet) {
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: static;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 0;
+    padding-top: 1px;
+  }
+}
+
+.nav--opened .nav__list {
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  z-index: 5;
+
+  @media (min-width: $tablet) {
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    position: static;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: transparent;
+    margin-right: 0;
+    padding-top: 1px;
+  }
 }
