@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    bottom: 31px;
+    top: -205px;
     right: 0;
   }
 }
@@ -137,13 +137,14 @@
       height: 512px;
     }
   }
+
   &:hover::before {
     background-color: #68b738;
   }
 
   &:focus-visible::before {
     outline: none;
-    color: #68b738;
+    background-color: #68b738;
   }
 
   @supports not selector(:focus-visible) {

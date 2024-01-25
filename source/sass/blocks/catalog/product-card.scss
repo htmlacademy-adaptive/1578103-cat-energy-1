@@ -28,7 +28,7 @@
 .product-card__wrap {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet) {
     display: block;
@@ -37,16 +37,16 @@
 
 .product-card__image-link {
   width: 50%;
-  display: block;
-  align-self: center;
+  height: 107px;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet) {
     width: 170px;
     height: 210px;
     margin: 0 auto 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   @media (min-width: $desktop) {
@@ -75,13 +75,10 @@
 }
 
 .product-card__image {
+  width: auto;
+  height: auto;
   display: block;
   margin: 0 auto;
-
-  @media (min-width: $tablet) {
-    width: auto;
-    height: auto;
-  }
 }
 
 .product-card__specifications-wrap {

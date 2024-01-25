@@ -27,7 +27,7 @@
   padding: 30px 0 0 0;
 
   @media (min-width: $tablet) {
-    padding: 77px 0 42px 0;
+    padding: 77px 0 35px 0;
   }
 
   @media (min-width: $desktop) {
@@ -47,7 +47,7 @@
 
 .product__title {
   margin: 0 0 30px;
-  padding-left: 92px;
+  padding-left: 90px;
   color: #000000;
   font-family: $oswald;
   font-size: 24px;
@@ -59,6 +59,7 @@
   @media (min-width: $tablet) {
     margin: 0 0 23px;
     padding-left: 53px;
+    padding-right: 280px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -66,6 +67,7 @@
   @media (min-width: $desktop) {
     margin: 0 0 72px;
     padding-left: 214px;
+    padding-right: 0;
   }
 
   &--slim {
@@ -77,7 +79,7 @@
       background-color: rgb(104, 183, 56);
       position: absolute;
       top: -5px;
-      left: 22px;
+      left: 20px;
 
       @media (min-width: $tablet) {
         width: 200px;
@@ -139,7 +141,7 @@
       background-color: rgb(104, 183, 56);
       position: absolute;
       top: -5px;
-      left: 23px;
+      left: 21px;
 
       @media (min-width: $tablet) {
         width: 200px;
@@ -195,11 +197,11 @@
 
 .product__text {
   max-width: 430px;
-  margin: 0 22px 21px;
+  margin: 0 20px 21px;
 
   @media (min-width: $tablet) {
     max-width: 344px;
-    margin: 0 52px 40px;
+    margin: 0 52px 32px;
     color: #000000;
     font-size: 16px;
     line-height: 24px;
@@ -207,7 +209,7 @@
 
   @media (min-width: $desktop) {
     max-width: 460px;
-    margin: 0 52px 15px;
+    margin: 0 52px 8px;
   }
 }
 
@@ -233,6 +235,7 @@
 }
 
 .product__link {
+  max-width: 260px;
   text-decoration: none;
   display: inline-block;
   color: #000000;
@@ -241,16 +244,17 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 21px 60px 21px 23px;
+  padding: 21px 60px 21px 21px;
   position: relative;
 
   @media (min-width: $tablet) {
-    margin-left: 29px;
+    margin-left: 31px;
+    line-height: 30px;
     font-size: 20px;
   }
 
   @media (min-width: $desktop) {
-    margin-left: 30px;
+    margin-left: 32px;
   }
 
   &::after {
@@ -262,14 +266,17 @@
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
-    top: 50%;
-    margin-top: -5px;
-    right: 7px;
+    top: 24px;
+    right: 5px;
     transition: background-position 400ms ease-out;
 
     @media (min-width: $tablet) {
-      margin-top: -6px;
+      top: 31px;
       right: -6px;
+    }
+
+    @media (min-width: $desktop) {
+      right: -5px;
     }
   }
 
@@ -296,6 +303,7 @@
       background-position: 0 50%;
     }
   }
+
   &:active {
     opacity: 0.3;
   }

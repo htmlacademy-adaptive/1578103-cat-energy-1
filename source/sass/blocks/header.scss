@@ -16,19 +16,8 @@
 
   @media (min-width: $desktop) {
     width: 1220px;
+    margin: 0 auto;
     padding: 55px 0 0;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -610px;
-    z-index: 5;
-  }
-
-  &--form {
-    @media (min-width: $desktop) {
-      margin: 0 auto;
-      position: static;
-    }
   }
 }
 

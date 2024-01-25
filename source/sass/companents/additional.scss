@@ -91,6 +91,7 @@
   @media (min-width: $tablet) {
     padding: 1px 3px 0;
   }
+
   @media (min-width: $desktop) {
     text-align: left;
   }
@@ -99,4 +100,5 @@
 .additional__button {
   display: block;
   padding: 10px 10px;
+  align-self: start;
 }
