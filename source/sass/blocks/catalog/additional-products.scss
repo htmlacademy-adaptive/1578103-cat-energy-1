@@ -98,14 +98,14 @@
   padding-top: 187px;
   text-decoration: none;
   background-color: #68b738;
-  background-image: url("../img/catalog/gift.jpg");
+  background-image: image-set(url("../img/catalog/gift.webp"), url("../img/catalog/gft.jpg"));
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/catalog/gift@2x.jpg");
+    background-image: image-set(url("../img/catalog/gift@2x.webp"), url("../img/catalog/gft@2x.jpg"));
     background-size: cover;
   }
 
@@ -115,11 +115,11 @@
     display: flex;
     justify-content: end;
     padding-top: 0;
-    background-image: url("../img/catalog/gift-tablet.jpg");
+    background-image: image-set(url("../img/catalog/gift-tablet.webp"), url("../img/catalog/gift-tablet.jpg"));
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/catalog/gift-tablet@2x.jpg");
+      background-image: image-set(url("../img/catalog/gift-tablet@2x.webp"), url("../img/catalog/gift-tablet@2x.jpg"));
       background-size: cover;
     }
 
@@ -127,11 +127,14 @@
       min-height: 288px;
       margin: 0;
       display: block;
-      background-image: url("../img/catalog/gift-desktop.jpg");
+      background-image: image-set(url("../img/catalog/gift-desktop.webp"), url("../img/catalog/gift-desktop.jpg"));
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/catalog/gift-desktop@2x.jpg");
+        background-image: image-set(
+          url("../img/catalog/gift-desktop@2x.webp"),
+          url("../img/catalog/gift-desktop@2x.jpg")
+        );
         background-size: cover;
       }
     }

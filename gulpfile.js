@@ -14,7 +14,6 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 
 
-
 // Styles
 
 export const styles = () => {
@@ -71,7 +70,7 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+ export const sprite = () => {
   return gulp.src(['source/img/icons-sprite/*.svg'])
     .pipe(svgo())
     .pipe(svgstore({
@@ -80,7 +79,6 @@ const sprite = () => {
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 }
-
 
 //Copy
 const copy = (done) => {
