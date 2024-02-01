@@ -74,24 +74,44 @@
 
   &:focus-visible {
     outline: none;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
   }
 
   @supports not selector(:focus-visible) {
     &:focus {
       outline: none;
-      color: rgba(0, 0, 0, 0.8);
+      color: rgba(0, 0, 0, 0.6);
     }
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .site-list--index .site-list__link {
   @media (min-width: $desktop) {
     color: #ffffff;
+  }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 

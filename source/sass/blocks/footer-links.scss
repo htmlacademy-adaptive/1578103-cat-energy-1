@@ -12,7 +12,7 @@
   }
 }
 
-.footer-links-wrap {
+.footer-links__wrap {
   @media (min-width: $tablet) {
     padding: 55px 29px 55px 31px;
     display: flex;
@@ -22,7 +22,7 @@
   @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
-    padding: 67px 0;
+    padding: 69px 0;
     display: flex;
     flex-wrap: wrap;
   }
