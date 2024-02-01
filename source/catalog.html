@@ -10,6 +10,9 @@
   <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./img/favicon/180x180.png">
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="content">
@@ -287,7 +290,8 @@
                     srcset="./img/catalog/rice-500-desktop.webp 1x, ./img/catalog/rice-500-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="./img/catalog/rice-500-tablet.webp 1x, ./img/catalog/rice-500-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/catalog/rice-500-mobile.webp 1x, ./img/catalog/rice-500-mobile@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/rice-500-mobile.webp 1x, ./img/catalog/rice-500-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="./img/catalog/rice-500-desktop.png 1x, ./img/catalog/rice-500-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -334,7 +338,7 @@
           </span>
         </h2>
         <div class="additional-products__wrap">
-          <div class="additional__desktop-wrap">
+          <div class="additional-products__desktop-wrap">
             <ul class="additional-products__list">
               <li class="additional-products__item additional">
                 <div class="additional__wrap">
@@ -353,7 +357,7 @@
                     <span class="additional__name">5 литров</span>
                     <span class="additional__value">50 ₽</span>
                   </div>
-                </div class="additional__wrap">
+                </div>
                 <a href="#" class="additional__button button button--decor button--small-text">Заказать</a>
               </li>
               <li class="additional-products__item additional">
@@ -431,19 +435,13 @@
           </a>
           <div class="footer-links__social social">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-              <svg role="img" aria-label="Мы в ВК" width="28" height="22">
-                <use href="./img/sprite.svg#vk"></use>
-              </svg>
+              <span class="visually-hidden">Мы в ВК</span>
             </a>
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg role="img" aria-label="Мы в youtube" width="28" height="22">
-                <use href="./img/sprite.svg#youtube"></use>
-              </svg>
+              <span class="visually-hidden">Мы в youtube</span>
             </a>
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <svg role="img" aria-label="Мы в telegram" width="28" height="22">
-                <use href="./img/sprite.svg#telegram"></use>
-              </svg>
+              <span class="visually-hidden">Мы в telegram</span>
             </a>
           </div>
           <div class="footer-links__copyright copyright">

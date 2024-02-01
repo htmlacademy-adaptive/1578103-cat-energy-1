@@ -1,24 +1,27 @@
 .welcome {
   width: 100%;
-  background-image: url("../img/index/chicken-mobile.png");
+  background-image: image-set(url("../img/index/chicken-mobile.webp"), url("../img/index/chicken-mobile.png"));
   background-position: left 50% bottom 44px;
   background-repeat: no-repeat;
   background-size: 280px 270px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index/chicken-mobile@2x.png");
+    background-image: image-set(url("../img/index/chicken-mobile@2x.webp"), url("../img/index/chicken-mobile@2x.png"));
     background-size: 280px 270px;
   }
 
   @media (min-width: $tablet) {
     padding-top: 34px;
     padding-bottom: 526px;
-    background-image: url("../img/index/chicken-tablet.png");
+    background-image: image-set(url("../img/index/chicken-tablet.webp"), url("../img/index/chicken-tablet.png"));
     background-position: left 50% bottom 0;
     background-size: auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/chicken-tablet@2x.png");
+      background-image: image-set(
+        url("../img/index/chicken-tablet@2x.webp"),
+        url("../img/index/chicken-tablet@2x.png")
+      );
       background-size: 709px auto;
     }
   }
@@ -26,13 +29,16 @@
   @media (min-width: $desktop) {
     padding-top: 0;
     padding-bottom: 185px;
-    background-image: url("../img/index/chicken-desktop.png");
+    background-image: image-set(url("../img/index/chicken-desktop.webp"), url("../img/index/chicken-desktop.png"));
     background-position: left calc(50% + 113px) top 25px;
     background-size: auto;
     position: relative;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/chicken-desktop@2x.png");
+      background-image: image-set(
+        url("../img/index/chicken-desktop@2x.webp"),
+        url("../img/index/chicken-desktop@2x.png")
+      );
       background-size: 552px auto;
     }
   }
@@ -44,7 +50,7 @@
       height: 100%;
       min-height: 694px;
       background-color: #64a73c;
-      background-image: url("../img/index/cat-desktop.jpg");
+      background-image: image-set(url("../img/index/cat-desktop.webp"), url("../img/index/cat-desktop.jpg"));
       background-position: right 0 top 0;
       background-repeat: no-repeat;
       background-size: auto 100%;
@@ -55,7 +61,7 @@
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/index/cat-desktop@2x.jpg");
+        background-image: image-set(url("../img/index/cat-desktop@2x.webp"), url("../img/index/cat-desktop@2x.jpg"));
         background-size: auto 100%;
       }
     }
@@ -79,7 +85,7 @@
   text-align: center;
   color: #ffffff;
   background-color: #64a73d;
-  background-image: url("../img/index/cat.jpg");
+  background-image: image-set(url("../img/index/cat.webp"), url("../img/index/cat.jpg"));
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -87,7 +93,7 @@
   z-index: -1;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index/cat@2x.jpg");
+    background-image: image-set(url("../img/index/cat@2x.webp"), url("../img/index/cat@2x.jpg"));
     background-size: auto 100%;
   }
 

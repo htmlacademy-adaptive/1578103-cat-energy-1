@@ -12,7 +12,7 @@ import squoosh from 'gulp-libsquoosh';
 import { deleteAsync } from 'del';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-
+import { stacksvg } from 'gulp-stacksvg'
 
 
 // Styles
@@ -67,11 +67,12 @@ const createWebp = () => {
 
 //SVG
 const svg = () =>
-  gulp.src(['source/img/**/*.svg', '!source/img/icons-sprite/*.svg'])
+  gulp.src(['source/img/**/*.svg', '!source/img/icons-sprite/*.svg', '!source/img/stack/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+//SVG sprite
+    const sprite = () => {
   return gulp.src(['source/img/icons-sprite/*.svg'])
     .pipe(svgo())
     .pipe(svgstore({
@@ -81,6 +82,14 @@ const sprite = () => {
     .pipe(gulp.dest('build/img'));
 }
 
+//SVG stack
+const stack = () => {
+  return gulp.src(['source/img/stack/*.svg'])
+  .pipe(svgo())
+  .pipe(stacksvg())
+  .pipe(rename('social-stack.svg'))
+  .pipe(gulp.dest('build/img'));
+}
 
 //Copy
 const copy = (done) => {
@@ -139,6 +148,7 @@ export const build = gulp.series(
     styles,
     html,
     script,
+    stack,
     svg,
     sprite,
     createWebp
@@ -155,6 +165,7 @@ export default gulp.series(
     styles,
     html,
     script,
+    stack,
     svg,
     sprite,
     createWebp

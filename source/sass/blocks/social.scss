@@ -22,8 +22,32 @@
   height: 19px;
   text-decoration: none;
 
+  &--vk {
+    mask-image: url("../img/social-stack.svg#vk");
+    mask-position: 50% 50%;
+    mask-size: 28px 22px;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &--youtube {
+    mask-image: url("../img/social-stack.svg#youtube");
+    mask-position: 50% 50%;
+    mask-size: 28px 22px;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &--telegram {
+    mask-image: url("../img/social-stack.svg#telegram");
+    mask-position: 50% 50%;
+    mask-size: 28px 22px;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
   &:hover {
-    color: #68b738;
+    background-color: #68b738;
   }
 
   &:focus-visible {
@@ -34,11 +58,11 @@
   @supports not selector(:focus-visible) {
     &:focus {
       outline: none;
-      color: #68b738;
+      background-color: #68b738;
     }
   }
 
   &:active {
-    color: rgba(105, 183, 56, 0.3);
+    background-color: rgba(105, 183, 56, 0.3);
   }
 }
