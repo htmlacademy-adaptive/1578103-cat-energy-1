@@ -28,13 +28,14 @@
 .expenses__title {
   display: inline-block;
   text-transform: uppercase;
+  margin-right: 3px;
 
   @media (min-width: $tablet) {
     margin-bottom: 10px;
   }
 
   @media (min-width: $desktop) {
-    margin-right: 62px;
+    margin-right: 66px;
   }
 }
 

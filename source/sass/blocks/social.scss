@@ -52,7 +52,7 @@
 
   &:focus-visible {
     outline: none;
-    color: #68b738;
+    background-color: #68b738;
   }
 
   @supports not selector(:focus-visible) {
